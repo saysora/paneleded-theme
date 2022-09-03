@@ -24,14 +24,23 @@
 
 /* Main Chat Area */
 
+.ChannelWrapper-content, .ChannelWrapper-contents {
+    /* This fixes the background missing from other places, but disables the neat panel effect on text area of the chat input */
+    /* background: #373943; */
+}
+
 .LayeredPageContent-content {
-    margin: 5px;
+    margin: 5px 0 5px 5px;
     border-radius: 5px;
     background: none;
 }
 
 .ChannelWrapper-container-desktop:not(.ChannelWrapper-container-full-height) {
     height: auto;
+}
+
+.ChannelWrapper-container-with-sidebar .ChannelWrapper-contents {
+    padding-right: 0;
 }
 
 .ChatChannelMessages-container {
@@ -42,6 +51,17 @@
 
 .ChatChannelMessagesList-messages {
     padding-bottom: 0;
+}
+
+/* Message Input Area */
+
+.ChatChannelInputStatusDrawer-container {
+    padding: 0;
+}
+
+.TypeaheadDrawer-container {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .SlateInsertToolbar-container:after {
@@ -55,11 +75,22 @@
     flex-shrink: 0;
 }
 
+/* Overview Page */
+
+.TeamPageContent-container {
+    min-height: 0;
+}
+
+.TeamPageContent-content {
+    margin-right: 0;
+}
+
 /* Member List Area */
 
 .PageSidebarWrapper-container {
     margin: 5px;
     border-radius: 5px;
+    position: static;
 }
 
 .SidebarWrapper-container {
