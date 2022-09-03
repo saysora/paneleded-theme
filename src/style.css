@@ -61,3 +61,15 @@
     margin: 5px;
     border-radius: 5px;
 }
+
+.SidebarWrapper-container {
+    padding: 12px 5px 0;
+}
+
+.SimpleIconTabMenu-header {
+    margin-bottom: 5px;
+}
+
+.SidebarInfoItem-container {
+    margin-bottom: 5px;
+}
