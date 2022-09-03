@@ -1,0 +1,63 @@
+/* Server Banner */
+
+.TeamPageNavV3-container {
+    background: #1e2025;
+}
+
+.TeamPageNavV3-container-desktop .TeamPageNavV3-nav-contents {
+    margin: 5px 0 5px 5px;
+    border-radius: 5px;
+}
+
+.TeamPageNavV3-header {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Channel List */
+
+.TeamPageNavV3-container-desktop .TeamPageNavV3-nav-sections {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Main Chat Area */
+
+.LayeredPageContent-content {
+    margin: 5px;
+    border-radius: 5px;
+    background: none;
+}
+
+.ChannelWrapper-container-desktop:not(.ChannelWrapper-container-full-height) {
+    height: auto;
+}
+
+.ChatChannelMessages-container {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #373943;
+}
+
+.ChatChannelMessagesList-messages {
+    padding-bottom: 0;
+}
+
+.SlateInsertToolbar-container:after {
+    content: none;
+}
+
+.ChatChannelInput-container {
+    margin-top: 5px;
+    padding: 0;
+    min-height: 0;
+    flex-shrink: 0;
+}
+
+/* Member List Area */
+
+.PageSidebarWrapper-container {
+    margin: 5px;
+    border-radius: 5px;
+}
