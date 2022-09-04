@@ -27,6 +27,16 @@
     border-top-right-radius: 5px;
 }
 
+/* Custom Gradient Channel Selection */
+.TeamChannelItemContents-container-selected, .TeamNavSectionItem-container-selected {
+    background: linear-gradient(90deg, #5B86E5, #36D1DC);
+}
+
+/* Override the style not taking the white for the svg */
+.ChannelIcon-container.ChannelIcon-icon-size-xs.ChannelIcon-icon-selected.TeamChannelItemContents-icon .ChannelIcon-icon-primary {
+    fill: #fff;
+}
+
 /* User Panel */
 
 .NavV4Footer-container {
@@ -40,6 +50,7 @@
 
 .NavV4Footer-right {
     border-radius: 5px;
+    margin: 0 var(--x-gap);
 }
 
 /* Main Chat Area */
@@ -89,15 +100,24 @@
 }
 
 .ChatChannelInput-container {
-    margin-top: var(--y-gap);
     padding: 0;
     min-height: 0;
     flex-shrink: 0;
+    position: relative;
+    margin: calc(var(--y-gap) + 1px) 0;
 }
 
 .ChatChannelInputFooter-container {
     margin-top: 0;
     margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ChatChannelInputTypingIndicator-container {
+    padding-left: 15px;
 }
 
 /* Overview Page */
