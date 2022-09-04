@@ -17,7 +17,7 @@
 .TeamPageNavV3-header {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: var(--y-gap);
 }
 
 /* Channel List */
