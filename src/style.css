@@ -1,3 +1,8 @@
+:root {
+    --y-gap: 10px;
+    --x-gap: 10px;
+}
+
 /* Server Banner */
 
 .TeamPageNavV3-container {
@@ -5,7 +10,7 @@
 }
 
 .TeamPageNavV3-container-desktop .TeamPageNavV3-nav-contents {
-    margin: 5px 0 5px 5px;
+    margin: var(--y-gap) var(--x-gap);
     border-radius: 5px;
 }
 
@@ -22,6 +27,21 @@
     border-top-right-radius: 5px;
 }
 
+/* User Panel */
+
+.NavV4Footer-container {
+    background: #1e2025;
+    padding-bottom: var(--y-gap);
+}
+
+.NavV4Footer-footer-content {
+    background: none;
+}
+
+.NavV4Footer-right {
+    border-radius: 5px;
+}
+
 /* Main Chat Area */
 
 .ChannelWrapper-content, .ChannelWrapper-contents {
@@ -30,7 +50,7 @@
 }
 
 .LayeredPageContent-content {
-    margin: 5px 0 5px 5px;
+    margin: var(--y-gap) 0 0;
     border-radius: 5px;
     background: none;
 }
@@ -50,7 +70,7 @@
 }
 
 .ChatChannelMessagesList-messages {
-    padding-bottom: 0;
+    padding-bottom: 2px;
 }
 
 /* Message Input Area */
@@ -69,10 +89,15 @@
 }
 
 .ChatChannelInput-container {
-    margin-top: 5px;
+    margin-top: var(--y-gap);
     padding: 0;
     min-height: 0;
     flex-shrink: 0;
+}
+
+.ChatChannelInputFooter-container {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Overview Page */
@@ -88,7 +113,7 @@
 /* Member List Area */
 
 .PageSidebarWrapper-container {
-    margin: 5px;
+    margin: var(--y-gap) var(--x-gap);
     border-radius: 5px;
     position: static;
 }
